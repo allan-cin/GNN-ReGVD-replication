@@ -1,0 +1,6 @@
+transformers
+tensorboardX
+scipy==1.7.3
+neptune
+neptune-pytorch
+requests

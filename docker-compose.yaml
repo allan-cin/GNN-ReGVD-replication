@@ -1,0 +1,14 @@
+services:
+  regvd:
+    build: .
+    image: regvd:latest
+    volumes:
+      - .:/GNN-ReGVD-replication/
+#      - regvd:/data
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [ gpu ]
